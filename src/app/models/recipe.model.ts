@@ -1,6 +1,8 @@
 import { Ingredient } from './ingredient.model';
 
 export interface Recipe {
-  ingredients: Ingredient[];
-  detail: string;
+  name: string;
+  description: string;
+  imagePath: string;
+  // ingredients: Ingredient[];
 }
