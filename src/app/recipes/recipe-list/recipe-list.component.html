@@ -6,7 +6,7 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-recipe-item *ngFor="let elem of recipes" [name]="elem.name" [description]="elem.description" [imgPath]="elem.imagePath"></app-recipe-item>
+    <app-recipe-item *ngFor="let elem of recipes" [recipe]="elem" (recipeSelected)="showRecipeDetails(elem)"></app-recipe-item>
 	</div>
 </div>
 <hr>

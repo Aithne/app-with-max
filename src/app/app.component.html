@@ -1,10 +1,10 @@
-<app-navigation></app-navigation>
+<app-navigation (navClicked)="navClicked($event)"></app-navigation>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <h2>I'm working!</h2>
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="showElement === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="showElement !== 'recipe'"></app-shopping-list>
     </div>
   </div>
 </div>
